@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+body{
+    background-color: #10141b;
+}
+
+/* 头部背景图片 */
+#part1 header {
+    height: 100%;
+    width: 100%;
+    background: url('../image/castle.jpg')fixed bottom;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+}
+
+/* 导航栏 */
+#part1 header nav{
+    /* 固定定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 将元素靠边对齐 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    z-index: 999;
+    /* 动画过渡 */
+    transform: 0.6s;
+}
+#part1 header nav img{
+    max-width: 15%;
+    height: auto;
+}
+#part1 header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#part1 header nav ul li{
+    list-style: none;
+    width: 80px;
+}
+#part1 header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+/* 鼠标滑动时效果 */
+#part1 header .navigation-bar a:hover{
+    color:#C6BEEE;
+}
+/* 鼠标滚动后，改变导航栏样式 */
+#part1 header nav.sticky{
+    padding: 3px 100px;
+    background-color:#242633;
+    border-radius: 0 0 100px 100px;
+    box-shadow: 5px 5px 10px 2px black;
+}
+
+/* 头部文字 */
+header .text{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: #fff;
+}
+
+.transparent-box {
+    background-color: rgba(128, 128, 128, 0.5); /* 使用rgba()来设置颜色和不透明度。 */
+    width: 600px;
+    height: 450px;
+    margin-top: 60px;
+    margin-left: 100px;
+    border-radius: 10px; /* 使用border-radius来设置圆角。 */
+    text-align: center;
+    line-height: 100px; /* 使用line-height来垂直居中文字。 */
+    color: white;
+}
+
+
+.yueyue {
+    height: 350px;
+    display: flex;
+    margin-top: 100px;
+    align-items: center; /* 垂直居中 */
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 60px;
+}
+
+header .text h2{
+    font-size: 100px;
+    font-weight: normal;
+    margin: 0 0 -55px;
+    color: #a96700;
+}
+header .text h1 {
+    margin-bottom: 0;
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 9.4px;
+    margin: 0 0 15px;
+}
+header .text span{
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+/* 第一部分 */
+.part2{
+    /* position: absolute; */
+    width: auto;
+    top: 800px;
+    position:relative;
+    margin: 30px auto;
+    height: 300px;
+    max-width: 1200px;
+    min-width: 700px;
+}
+.biaoti1{
+    margin-left:10%;
+}
+.banner-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.banner-item{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 90%;
+    background-color: #000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 0.5s;
+    z-index: 0;
+}
+.banner-item>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity:0.5;
+    transform: opacity 0.5s;
+    object-fit: cover;
+}
+.banner-item.left{
+    left: 0;
+    transform:translateX(0);
+    z-index: 50;
+}
+.banner-item.right{
+    left:100%;
+    transform: translateX(-100%);
+    z-index: 50;
+}
+.banner-item.middle{
+    width: 550px;
+    height: 100%;
+    z-index: 100;
+}
+.banner-item.banner-item.middle>img{
+    opacity:1;
+}
+.slide-left-btn,.slide-right-btn{
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    color: #b4b4b4;
+    border: none;
+    background: none;
+}
+.slide-left-btn,.slide-right-btn:hover{
+    color: #fff;
+}
+.slide-left-btn{
+    left: 1%;
+}
+.slide-right-btn{
+    right: 1%;
+}
+.pagination-box{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination-box>span{
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    margin: 0 4px;
+    background-color: #b4b4b4;
+}
+.pagination-box>span.chose{
+    background: #C6BEEE;
+}
+/* 分割线 */
+.underline1{
+    position: relative;
+    margin-top: 900px;
+    margin-left: 10%;
+    margin-right: 900px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
+}
+/* 第二部分 */
+.biaoti2{
+    margin-left:10%;
+}
+.chose{
+     /* 100%的窗口高度 */
+     height: 80vh;
+     /* 弹性布局 水平+垂直居中 */
+     display: flex;
+     justify-content: center;
+}
+.card{
+    /* 相对定位 */
+    position: relative;
+    /* 图片大小和排列 */
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: #758a99;
+    border-radius: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 */
+    display: flex;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 居中 */
+    align-items: center;
+    color: #fff;
+    /* 阴影 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* 不让其他被挤压 */
+    flex-shrink: 0;
+
+}
+.card .photo img{
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例,裁切长边 */
+    object-fit: cover;
+}
+
+/* 默认大图 */
+.card .photo{
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;   
+}
+/* 鼠标移入变小图 */
+.card:hover .photo{
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+/* 这里加个黑色到透明的渐变背景，可以更好的看清楚名字 */
+.card .photo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+.card h1{
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+}
+.card:hover h1{
+    top: 170px;
+}
+.card h2{
+    margin-top: 220px;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.card p {
+    width: 90%;
+    text-indent: 32px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.card a{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.card a:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* 分割线 */
+.underline2{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 900px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
+}
+/* 第三部分 */
+.biaoti3{
+    margin-left:10%;
+}
+.chose2{
+     /* 100%的窗口高度 */
+     height: 80vh;
+     /* 弹性布局 水平+垂直居中 */
+     display: flex;
+     justify-content: center;
+}
+.card2{
+    /* 相对定位 */
+    position: relative;
+    /* 图片大小和排列 */
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    background-color: #758a99;
+    border-radius: 20px;
+    /* 溢出隐藏 */
+    overflow: hidden;
+    /* 弹性布局 */
+    display: flex;
+    /* 元素纵向排列 */
+    flex-direction: column;
+    /* 居中 */
+    align-items: center;
+    color: #fff;
+    /* 阴影 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* 不让其他被挤压 */
+    flex-shrink: 0;
+
+}
+.card2 .photo2 img{
+    width: 100%;
+    height: 100%;
+    /* 保持原有尺寸比例,裁切长边 */
+    object-fit: cover;
+}
+
+/* 默认大图 */
+.card2 .photo2{
+    /* 绝对定位 */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    /* 动画过渡 */
+    transition: 0.5s;   
+}
+/* 鼠标移入变小图 */
+.card2:hover .photo2{
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+/* 这里加个黑色到透明的渐变背景，可以更好的看清楚名字 */
+.card2 .photo2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent 50%,#222);
+}
+.card2 h1{
+    position: absolute;
+    top: 370px;
+    transition: 0.5s;
+}
+.card2:hover h1{
+    top: 170px;
+}
+.card2 h2{
+    margin-top: 220px;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.card2 p {
+    width: 90%;
+    text-indent: 32px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.card2 a{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.card2 a:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* 分割线 */
+.underline3{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 900px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 1px;
+    background-color: #fff;
+}
+
+/* 底部 */
+.footer {
+    padding: 1rem;
+    background-color: #10141b;
+    text-align: center;
+  }

@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+body{
+    background: url('../image/intro.jpg')no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-color: #f4f1dd;
+}
+/* 导航栏 */
+#part1 header nav{
+    /* 固定定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 弹性布局 */
+    display: flex;
+    /* 将元素靠边对齐 */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    z-index: 999;
+    /* 动画过渡 */
+    transform: 0.6s;
+}
+#part1 header nav img{
+    max-width: 15%;
+    height: auto;
+}
+#part1 header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#part1 header nav ul li{
+    list-style: none;
+    width: 80px;
+}
+#part1 header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+/* 鼠标滑动时效果 */
+#part1 header .navigation-bar a:hover{
+    color:#C6BEEE;
+}
+/* 鼠标滚动后，改变导航栏样式 */
+#part1 header nav.sticky{
+    padding: 3px 100px;
+    background-color:#242633;
+    border-radius: 0 0 100px 100px;
+    box-shadow: 5px 5px 10px 2px black;
+}
+  /* 商品界面 */
+  #part2{
+    background-color: #e0d9c3;
+    width: 100%;
+    height: 350vh;
+    position: absolute;
+    top:75%;
+  }
+  #part2 h1{
+    position: absolute;
+    top:5%;
+    left: 20%;
+    color: #10141b;
+  }
+  .underline{
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    width: 80%;
+    top:7%;
+    height: 1px;
+    background-color: #10141b;
+  }
+  .shopping{
+    width: 30%;
+    height: 80vh;
+    line-height: 20vh;
+    background: rgba(255, 255, 255,0.3);
+
+    position: absolute;
+    top: 40vh;
+    left: 20%;
+
+    background-image: url("../image/hedwig.jpg");
+    background-size: cover;
+  }
+  .shopping_intro{
+    width: 40%;
+    height:100vh;
+    text-align: center;
+    background: #242633;
+
+    position: absolute;
+    top: 45vh;
+    left: 47%;
+  }
+  .shopping_intro h2{
+    position: relative;
+    top: 10%;;
+  }
+  .shopping_intro1{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+  }
+  .shopping_intro2{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 34%;
+    left: 18%;
+  }
+  .shopping_intro3{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 48%;
+    left: 18%;
+  }
+  .shopping_intro button{
+    width: 70%;
+    margin-top: 100%;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px;
+    color: #a262ad;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+.shopping_intro button:hover{
+    background-color: #a262ad;
+    color: #f6f6f6;
+    transition: background-color 0.5s ease;
+}
+
+/* 第二件商品 */
+.shopping-2{
+    width: 30%;
+    height: 80vh;
+    line-height: 20vh;
+    background: rgba(255, 255, 255,0.3);
+
+    position: absolute;
+    top: 160vh;
+    left: 50%;
+
+    background-image: url("../image/HP_Herbology.jpg");
+    background-size: cover;
+  }
+  .shopping_intro-2{
+    width: 40%;
+    height:100vh;
+    text-align: center;
+    background: #242633;
+
+    position: absolute;
+    top: 165vh;
+    left:12%;
+  }
+  .shopping_intro-2 h2{
+    position: relative;
+    top: 10%;;
+  }
+  .shopping_intro1-2{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+  }
+  .shopping_intro2-2{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 34%;
+    left: 18%;
+  }
+  .shopping_intro3-2{
+    width: 60%;
+    text-indent:2em;
+    line-height: 2em;
+    position: absolute;
+    top: 58%;
+    left: 18%;
+  }
+  .shopping_intro-2 button{
+    width: 70%;
+    margin-top: 100%;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px;
+    color: #a262ad;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+.shopping_intro-2 button:hover{
+    background-color: #a262ad;
+    color: #f6f6f6;
+    transition: background-color 0.5s ease;
+}
+
+/* 底部 */
+.footer {
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    top: 350vh;
+    padding: 1rem;
+    background-color: #10141b;
+    text-align: center;
+  }
+  .bian{
+    margin-top: 3%;
+    width: 80%;
+    margin-left: 10%;
+    height: 60vh;
+    border: #fff solid;
+  }
+  .jianyi{
+    width: 80%;
+    height: 60vh;
+    border: 0;
+  }
+  .tijiao1,.chongzhi1{
+    width: 70px;
+    background-color: #f6f6f6;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px;
+    color: #a262ad;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+.tijiao1:hover,.chongzhi1:hover{
+    background-color: #a262ad;
+    color: #f6f6f6;
+    transition: background-color 0.5s ease;
+}
+table textarea{
+    color: #a262ad;
+}
+table input{
+    background-color: transparent;
+    width: 70%;
+    color: #fff;
+    border: none;
+    /* 下边框样式 */
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    text-indent: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+table input::placeholder{
+    color: #fff;
+}
+table input:focus{
+    color: #a262ad;
+    outline: none;
+    border-bottom: 1px solid #a262ad80;
+    transition: 0.5s;
+}
+table input:focus::placeholder{
+    opacity: 0;
+}

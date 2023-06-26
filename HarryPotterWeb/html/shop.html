@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HarryPotter</title>
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="../jsp/jquery-3.6.min.js"></script>
+</head>
+<body>
+<div id="part1">
+    <header>
+        <nav>
+        <a href="index.html" class="logo">
+            <img src="/image/logo.png">
+        </a>
+        <ul class="navigation-bar">
+            <li><a href="index.html">首页鉴赏</a></li>
+            <li><a href="intro.html">角色介绍</a></li>
+            <li><a href="book.html">书籍系列</a></li>
+            <li><a href="shop.html">更多资讯</a></li>
+            <li><a href="user.html">登录注册</a></li>
+        </ul>
+    </nav>
+    </header>
+</div>
+
+<div id="part2">
+    <h1>玩具系列</h1>
+    <div class="underline"></div>
+    <div class="shopping"></div>
+    <div class="shopping_intro">
+        <h2>迷人的海德薇互动毛绒</h2>
+        <p class="shopping_intro1">我们会在任何地方认出这只雪猫头鹰 - 是的，它是哈利心爱的宠物海德薇格，他在这里可以作为一个特殊的互动毛绒。</p>
+        <p class="shopping_intro2">海德薇可以拍打翅膀，移动她的喙，把头转270度，就像一只真正的猫头鹰一样。她甚至坐在自己的小栖木上，这样她就可以舒适地住在你家里。</p>
+        <p class="shopping_intro3">这款毛绒具有创新效果，具有直观的“荷叶边检测”，这意味着海德薇会知道何时想要抚摸她。她也会识别你说话的语气，并在你喜欢聊天时回复你。最后点睛之笔：海德薇还附上了一封特殊的霍格沃茨信件，上面有著名的红色蜡印章，她可以把它放在喙里。只有与秘密互动组合的朋友才能让海德薇格释放这封信。</p>
+        <button id="huoqu" onclick="">点击获取</button>
+    </div>
+    <div class="shopping-2"></div>
+    <div class="shopping_intro-2">
+        <h2>Vera Bradley 的全新 Herbology 灵感配饰系列</h2>
+        <p class="shopping_intro1-2">从花卉长袍到可爱的手提包，引导你内心的教授萌芽与这个美丽的新系列从美国品牌，维拉布拉德利。</p>
+        <p class="shopping_intro2-2">霍格沃茨的草药课是这组包包、吊饰和毯子的主题，设计中以曼德拉克斯和魔鬼圈套等神奇植物为特色，沉浸在插图花卉图案中。因此，如果您是绿指类型并且位于美国或加拿大，请立即浏览该系列。</p>
+        <p class="shopping_intro3-2">薇拉·布拉德利还有许多其他哈利波特主题的产品值得细读，比如霍格沃茨的家居主题包和可爱的毛绒毯子。随着春季和夏季的到来，这可能是哈利波特粉丝们的完美季节性外观。</p>
+        <button id="huoqu" onclick="">点击获取</button>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="bian">
+        <h1>有建议？联系我</h1>
+        <table class="jianyi">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" id="jianyi_name"></td>
+            </tr>
+            <tr>
+                <td>年龄：</td>
+                <td><input type="text" id="age"></td>
+            </tr>
+            <tr>
+                <td>邮箱：</td>
+                <td><input type="text" id="jianyi_email"></td>
+            </tr>
+            <tr>
+                <td>电话：</td>
+                <td><input type="text" id="jianyi_phone"></td>
+            </tr>
+            <tr>
+                <td>留言：</td>
+                <td><textarea cols="80" rows="8" id="liuyan"></textarea></td>
+            </tr>
+        </table>
+        <input type="button" value="提交" class="tijiao1" onclick="tijiao_jianyi()">
+        <input type="reset" value="重置" class="chongzhi1">
+    </div>
+</div>
+<script src="../jsp/shop.js"></script>
+<script src="../jsp/index.js"></script>

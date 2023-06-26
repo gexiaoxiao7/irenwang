@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HarryPotter</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <script src="../jsp/jquery-3.6.min.js"></script>
+</head>
+<body>
+<div id="part1">
+    <header>
+        <nav>
+        <a href="index.html" class="logo">
+            <img src="../image/logo.png">
+        </a>
+        <ul class="navigation-bar">
+            <li><a href="./index.html">首页鉴赏</a></li>
+            <li><a href="./intro.html">角色介绍</a></li>
+            <li><a href="./book.html">书籍系列</a></li>
+            <li><a href="./shop.html">更多资讯</a></li>
+            <li><a href="./user.html">登录注册</a></li>
+        </ul>
+    </nav>
+    </header>
+</div>
+
+<div class="container">
+    <div class="form-box">
+        <!-- 注册 -->
+        <div class="register-box hidden">
+            <h1>register</h1>
+            <input type="text" placeholder="用户名"id="name2">
+            <input type="email" placeholder="邮箱"id="email">
+            <input type="password" placeholder="密码" id="pwd2">
+            <input type="password" placeholder="确认密码" id="pwd3">
+            <button class="zhuce" onclick="dianji2()">注册</button>
+        </div>
+        <!-- 登录 -->
+        <div class="login-box">
+            <h1>login</h1>
+            <input type="text" placeholder="用户名" id="name">
+            <input type="password" placeholder="密码" id="pwd">
+            <button id="denglu" onclick="dianji()">登录</button>
+        </div>
+    </div>
+    <div class="con-box left">
+        <h2>欢迎来到<span>霍格沃兹</span></h2>
+        <p>点击注册即可开始你的<span>魔法世界</span>之旅</p>
+        <img src="../image/logo2.png" alt="logo">
+        <p>已有账号</p>
+        <button id="login">去登录</button>
+    </div>
+    <div class="con-box right">
+        <h2>欢迎来到<span>霍格沃兹</span></h2>
+        <p>快来开始你今天的<span>魔法奇遇</span></p>
+        <img src="../image/logo2.png" alt="logo">
+        <p>没有账号？</p>
+        <button id="register">去注册</button>
+    </div>
+</div>
+
+<div class="footer">
+    哈利波特主题系列网站<br>
+    出自：2020120310120李温妮<br>
+</div>
+<script src="../jsp/user.js"></script>
+<script src="../jsp/index.js"></script>
+
+</body>
+</html>
