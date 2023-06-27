@@ -78,7 +78,7 @@ header .text{
 .transparent-box {
     background-color: rgba(128, 128, 128, 0.5); /* 使用rgba()来设置颜色和不透明度。 */
     width: 600px;
-    height: 450px;
+    height: 400px;
     margin-top: 60px;
     margin-left: 100px;
     border-radius: 10px; /* 使用border-radius来设置圆角。 */
@@ -96,7 +96,7 @@ header .text{
     width: 350px;
     height: auto;
     position: absolute;
-    right: 60px;
+    margin-left: 40px;
 }
 
 header .text h2{

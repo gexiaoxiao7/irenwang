@@ -5,7 +5,7 @@
     color: aliceblue;
 }
 body{
-    background: url('../image/intro.jpg')no-repeat;
+    background: url('imageg')no-repeat;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -93,7 +93,7 @@ body{
     top: 40vh;
     left: 20%;
 
-    background-image: url("../image/hedwig.jpg");
+    background-image: url("imagepg");
     background-size: cover;
   }
   .shopping_intro{
@@ -163,7 +163,7 @@ body{
     top: 160vh;
     left: 50%;
 
-    background-image: url("../image/HP_Herbology.jpg");
+    background-image: url("imagelogy.jpg");
     background-size: cover;
   }
   .shopping_intro-2{
